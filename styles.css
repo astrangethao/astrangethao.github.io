@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  background: #6ba8a9;
+  color: #323232;
+}
+
+image {
+  max-width: 100%;
+}
+
+.icon {
+  height: 1.1em;
+  overflow: visible;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 100px 75px;
+  background: #e3e7f1;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/**********************************
+* =Main Info
+**********************************/
+.avatar {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  transform: rotate(270deg);
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.my-name {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.my-title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #6ba8a9;
+  text-align: center;
+}
+
+.links-container {
+  display: flex;
+  margin: 10px 0 20px 0;
+  padding: 24px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.link-item img {
+  margin-right: 6px;
+}
+
+/**********************************
+* =Work Experience
+**********************************/
+.job {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.job-company {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/**********************************
+* =Interests
+**********************************/
+.interests-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interests-container img {
+  height: 50px;
+  opacity: 0.75;
+}
+
+/**********************************
+* =References
+**********************************/
+.references {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 760px) {
+  section {
+    grid-template-columns: 1fr;
+}
+
+.links, .job-title-container, .links-container{
+  flex-direction: column;
+}
