@@ -141,3 +141,12 @@ section:last-child {
 .references {
   font-size: 18px;
 }
+
+@media only screen and (max-width: 760px) {
+  section {
+    grid-template-columns: 1fr;
+}
+
+.links, .job-title-container, .links-container{
+  flex-direction: column;
+}
