@@ -61,9 +61,6 @@ section:last-child {
 .avatar {
   height: 140px;
   width: 140px;
-  object-fit: cover;
-  transform: rotate(270deg);
-  border-radius: 50%;
   filter: grayscale(100%);
 }
 
