@@ -35,7 +35,7 @@ a:hover {
   max-width: 950px;
   margin: 40px auto;
   padding: 100px 75px;
-  background: #e3e7f1;
+  background: #fffdf9;
 }
 
 section {
@@ -76,7 +76,7 @@ ul {
 .my-name {
   font-weight: bold;
   font-size: 60px;
-  letter-spacing: 20px;
+  letter-spacing: 25px;
   text-align: center;
 }
 
